@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="assests/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 19V14M12 19V10M19 19V5" stroke="#37B34A" stroke-width="2.5" stroke-linecap="round" stroke-line-join="round"/>
+                    <path d="M5 14L12 10L19 5" stroke="#37B34A" stroke-width="2.5" stroke-linecap="round" stroke-line-join="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Finance</span>
+                <span class="tracker-text">Personal Tracker</span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li class="nav-item active">
+                        <i class="fas fa-th-large"></i> 
+                        <span class="nav-text">Dashboard</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span class="nav-text">Transactions</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="nav-text">Analytics</span>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-text">Settings</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sign-out-section">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Sign Out</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Welcome back, clever!</h1>
+                <p>Here's your financial overview for this month</p>
+            </header>
+            
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Balance</div>
+                    <div class="stat-value">$8,234.56</div>
+                    <div class="stat-icon-small">$</div>
+                </div>
+                
+                <div class="stat-card income">
+                    <div class="stat-label">This Month Income</div>
+                    <div class="stat-value">$6,200.00</div>
+                    <div class="stat-icon-small"><i class="fas fa-chevron-up"></i></div>
+                </div>
+                
+                <div class="stat-card expense">
+                    <div class="stat-label">This Month Expense</div>
+                    <div class="stat-value">$1,250.50</div>
+                    <div class="stat-icon-small"><i class="fas fa-chevron-down"></i></div>
+                </div>
+            </section>
+
+            <section class="balance-trend">
+                <h2>Balance Trend</h2>
+                <div class="chart-placeholder">
+                    <p>Financial Chart Data Placeholder</p>
+                </div>
+            </section>
+
+            <section class="recent-transactions">
+                <div class="section-header">
+                    <h2>Recent Transactions</h2>
+                    <button class="add-transaction-btn">
+                        <i class="fas fa-plus"></i> Add Transaction
+                    </button>
+                </div>
+
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-icon salary"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="transaction-details">
+                            <span class="item-name">Monthly Salary</span>
+                            <span class="item-category">Salary</span>
+                        </div>
+                        <div class="transaction-amount income-amount">
+                            <span>+$5,000.00</span>
+                            <span class="item-date">Nov 29</span>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-icon food"><i class="fas fa-coffee"></i></div>
+                        <div class="transaction-details">
+                            <span class="item-name">Coffee Shop</span>
+                            <span class="item-category">Food</span>
+                        </div>
+                        <div class="transaction-amount expense-amount">
+                            <span>-$4.50</span>
+                            <span class="item-date">Nov 30</span>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon food"><i class="fas fa-shopping-basket"></i></div>
+                        <div class="transaction-details">
+                            <span class="item-name">Grocery Store</span>
+                            <span class="item-category">Food</span>
+                        </div>
+                        <div class="transaction-amount expense-amount">
+                            <span>-$89.32</span>
+                            <span class="item-date">Dec 1</span>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon entertainment"><i class="fas fa-film"></i></div>
+                        <div class="transaction-details">
+                            <span class="item-name">Netflix Subscription</span>
+                            <span class="item-category">Entertainment</span>
+                        </div>
+                        <div class="transaction-amount expense-amount">
+                            <span>-$15.99</span>
+                            <span class="item-date">Dec 1</span>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon freelance"><i class="fas fa-briefcase"></i></div>
+                        <div class="transaction-details">
+                            <span class="item-name">Freelance Project</span>
+                            <span class="item-category">Freelance</span>
+                        </div>
+                        <div class="transaction-amount income-amount">
+                            <span>+$1,200.00</span>
+                            <span class="item-date">Nov 26</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
